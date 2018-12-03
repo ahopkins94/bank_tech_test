@@ -1,7 +1,38 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/anouskahopkins/Makers/Week_10/bank-tech-test/spec/account_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/anouskahopkins/Makers/Week_10/bank-tech-test/lib/account.rb": [
+        null
+      ],
+      "/Users/anouskahopkins/Makers/Week_10/bank-tech-test/spec/features/updating_balance_spec.rb": [
+        null,
+        null,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null
+      ]
     },
-    "timestamp": 1543835866
+    "timestamp": 1543838890
   }
 }
