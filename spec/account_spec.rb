@@ -10,7 +10,7 @@ describe Account do
   end
 
   it 'should update the balance of an account after a deposit' do
-    account.deposit(credit)
+    account.update_balance(credit)
     expect(account.balance).to eq 100
   end
 

@@ -6,8 +6,8 @@
      @balance = 0
    end
 
-   def deposit(credit)
-     @balance += credit.amount
+   def update_balance(action)
+     @balance += action.amount
    end
 
  end
