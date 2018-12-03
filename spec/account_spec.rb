@@ -10,6 +10,10 @@ describe Account do
     expect(account.balance).to eq 0
   end
 
+  it 'should have initially have an empty array of transcations' do
+    expect(account.transactions).to eq []
+  end
+
   it 'should update the balance of an account after a deposit' do
     account.update_balance(credit)
     expect(account.balance).to eq 100
