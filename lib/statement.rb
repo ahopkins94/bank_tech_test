@@ -7,9 +7,7 @@ class Statement
 
   def transactions
     string = "date || credit || debit || balance\n"
-    @account.transactions.each do |transaction|
-      string += transaction + "\n"
-    end
+    @account.transactions.each { |transaction| string += transaction + "\n" }
     string.chomp
   end
 end
