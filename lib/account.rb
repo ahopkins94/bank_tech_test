@@ -9,7 +9,7 @@ class Account
   def transaction(action)
     update_balance(action)
     if action.amount < 0
-      @transactions.unshift("#{action.date} || || #{action.amount}.00 || #{@balance}.00")
+      @transactions.unshift("#{action.date} || || #{-action.amount}.00 || #{@balance}.00")
     else
       @transactions.unshift("#{action.date} || #{action.amount}.00 || || #{@balance}.00")
     end
