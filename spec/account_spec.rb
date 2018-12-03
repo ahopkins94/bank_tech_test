@@ -28,4 +28,10 @@ describe Account do
     account.transaction(credit)
     expect(account.transactions).to eq ['12/01/2012 || 100.00 || || 100.00']
   end
+
+  it 'should have a transaction of a debit' do
+    account.transaction(credit)
+    account.transaction(debit)
+    expect(account.transactions).to eq ['13/01/2012 || || 50.00 || 50.00', '12/01/2012 || 100.00 || || 100.00']
+  end
 end
