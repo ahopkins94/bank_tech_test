@@ -1,7 +1,6 @@
 require 'credit'
 
 describe Credit do
-
   let(:date) { '12/01/2012' }
   let(:credit) { Credit.new(100, date) }
 
@@ -12,5 +11,4 @@ describe Credit do
   it 'should have a current date' do
     expect(credit.date).to eq '12/01/2012'
   end
-
 end
