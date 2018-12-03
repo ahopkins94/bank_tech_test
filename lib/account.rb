@@ -20,5 +20,4 @@ class Account
   def update_balance(action)
     @balance += action.amount
   end
-
 end

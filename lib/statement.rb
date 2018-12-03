@@ -1,5 +1,4 @@
 class Statement
-
   attr_reader :account
 
   def initialize(account)
@@ -11,7 +10,6 @@ class Statement
     @account.transactions.each do |transaction|
       string += transaction + "\n"
     end
-    return string.chomp
+    string.chomp
   end
-
 end

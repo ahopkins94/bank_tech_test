@@ -5,5 +5,4 @@ class Credit
     @amount = amount
     @date = date
   end
-
 end
