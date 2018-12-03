@@ -35,5 +35,13 @@ describe Account do
       account.transaction(debit)
       expect(account.transactions).to eq ['13/01/2012 || || 50.00 || 50.00', '12/01/2012 || 100.00 || || 100.00']
     end
+
+    it 'should not complete transaction of a debit if the balance would return negative' do
+      2.times{ account.transaction(debit) }
+      account.transaction(debit)
+      expect(account.balance).to eq 0
+    end
+
   end
+  
 end
