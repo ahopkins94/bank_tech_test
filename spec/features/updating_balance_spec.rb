@@ -1,5 +1,5 @@
-feature 'Updating Balance' do
-  scenario "it can print the account's balance" do
+feature 'Print account statement' do
+  scenario "it can print the account's transactions" do
     account = Account.new
     credit = Credit.new(1000, '10/01/2012')
     account.transaction(credit)

@@ -8,7 +8,7 @@ describe Debit do
     expect(debit.amount).to eq(-50)
   end
 
-  it 'should have a current date' do
+  it 'should have a date of date' do
     expect(debit.date).to eq '12/01/2012'
   end
 end

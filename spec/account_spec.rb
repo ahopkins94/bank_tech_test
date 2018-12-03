@@ -9,7 +9,7 @@ describe Account do
     expect(account.balance).to eq 0
   end
 
-  it 'should have initially have an empty array of transcations' do
+  it 'should initially have an empty array of transactions' do
     expect(account.transactions).to eq []
   end
 
@@ -27,11 +27,11 @@ describe Account do
       expect(account.balance).to eq 50
     end
 
-    it 'should have a transaction of a credit' do
+    it 'should complete a transaction of a credit' do
       expect(account.transactions).to eq ['12/01/2012 || 100.00 || || 100.00']
     end
 
-    it 'should have a transaction of a debit' do
+    it 'should complete a transaction of a debit' do
       account.transaction(debit)
       expect(account.transactions).to eq ['13/01/2012 || || 50.00 || 50.00', '12/01/2012 || 100.00 || || 100.00']
     end
@@ -43,5 +43,5 @@ describe Account do
     end
 
   end
-  
+
 end

@@ -8,7 +8,7 @@ describe Credit do
     expect(credit.amount).to eq 100
   end
 
-  it 'should have a current date' do
+  it 'should have a date of date' do
     expect(credit.date).to eq '12/01/2012'
   end
 end
