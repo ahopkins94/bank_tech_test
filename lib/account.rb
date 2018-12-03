@@ -6,4 +6,8 @@
      @balance = 0
    end
 
+   def deposit(credit)
+     @balance += credit.amount
+   end
+
  end
