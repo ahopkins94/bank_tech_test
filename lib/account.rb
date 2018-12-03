@@ -7,6 +7,7 @@ class Account
   end
 
   def transaction(action)
+    return nil if @balance + action.amount < 0
     update_balance(action)
     if action.amount < 0
       @transactions.unshift("#{action.date} || || #{-action.amount}.00 || #{@balance}.00")
