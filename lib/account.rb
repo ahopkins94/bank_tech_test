@@ -6,5 +6,16 @@ class Account
     @balance = 0
     @transactions = []
   end
-  
+
+  def add_transaction(action)
+    update_balance(action)
+    @transactions.unshift(Transaction.new(@balance, action))
+  end
+
+  private
+
+  def update_balance(action)
+    @balance += action.amount
+  end
+
 end
