@@ -1,4 +1,4 @@
-# This class controls the creation of transactions
+# This class handles the creation of a transaction
 class Transaction
   attr_reader :amount, :date, :balance
 

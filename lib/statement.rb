@@ -17,6 +17,6 @@ class Statement
   def format(transaction)
     return "#{transaction.date} || || #{sprintf('%.2f', -transaction.amount)} || #{sprintf('%.2f', transaction.balance)}" if transaction.amount < 0
 
-    return "#{transaction.date} || #{sprintf('%.2f', transaction.amount)} || || #{sprintf('%.2f', transaction.balance)}"
+    "#{transaction.date} || #{sprintf('%.2f', transaction.amount)} || || #{sprintf('%.2f', transaction.balance)}"
   end
 end
