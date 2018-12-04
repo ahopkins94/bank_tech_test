@@ -1,3 +1,4 @@
+# This class holds the amount and date information about a credit
 class Credit
   attr_reader :amount, :date
 

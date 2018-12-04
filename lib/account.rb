@@ -1,3 +1,4 @@
+# This class handles the transactions and balance of an account
 class Account
   attr_reader :balance, :transactions
 
@@ -9,7 +10,9 @@ class Account
   def transaction(action)
     @balance + action.amount < 0 ? nil : update_balance(action)
     return @transactions.unshift("#{action.date} || || #{-action.amount}.00 || #{@balance}.00") if action.amount < 0
-    return @transactions.unshift("#{action.date} || #{action.amount}.00 || || #{@balance}.00")
+
+    @transactions.unshift("#{action.date} || #{action.amount}.00
+      || || #{@balance}.00")
   end
 
   private
@@ -17,5 +20,4 @@ class Account
   def update_balance(action)
     @balance += action.amount
   end
-
 end

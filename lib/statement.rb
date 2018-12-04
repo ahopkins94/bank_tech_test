@@ -1,3 +1,4 @@
+# This class handles the statement of transactions of an account for the user
 class Statement
   attr_reader :account
 

@@ -37,11 +37,9 @@ describe Account do
     end
 
     it 'should not complete transaction of a debit if the balance would return negative' do
-      2.times{ account.transaction(debit) }
+      2.times { account.transaction(debit) }
       account.transaction(debit)
       expect(account.balance).to eq 0
     end
-
   end
-
 end

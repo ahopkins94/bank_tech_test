@@ -1,3 +1,4 @@
+# This class handles the date and amount of a debit
 class Debit
   attr_reader :amount, :date
 
