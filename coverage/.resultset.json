@@ -7,6 +7,7 @@
         1,
         2,
         4,
+        4,
         6,
         null,
         1,
@@ -171,7 +172,6 @@
         null,
         6,
         null,
-        null,
         null
       ],
       "/Users/anouskahopkins/Makers/Week_10/bank-tech-test/spec/transaction_spec.rb": [
@@ -201,13 +201,14 @@
         1,
         null,
         1,
-        10,
-        10,
-        10,
+        6,
+        6,
+        6,
+        null,
         null,
         null
       ]
     },
-    "timestamp": 1543933134
+    "timestamp": 1543934513
   }
 }

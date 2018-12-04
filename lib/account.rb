@@ -7,9 +7,9 @@ class Account
     @transactions = []
   end
 
-  def add_transaction(action)
+  def add_transaction(action, transaction_class)
     update_balance(action)
-    @transactions.unshift(Transaction.new(@balance, action))
+    @transactions.unshift(transaction_class.new(@balance, action))
   end
 
   private
